@@ -1,5 +1,9 @@
 # Photoapplication2
 
+#This application is very basic. created bunch of components and routing all components 
+# I used `https://material.angular.io/`. did not use any bootstrap 
+# Login routing use router model and apply user and password credentials
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
 
 ## Development server
