@@ -1,8 +1,8 @@
 # Photoapplication2
 
-## This application is very basic. created bunch of components and routing all components 
-## I used [material.angular](https://material.angular.io/). did not use any bootstrap 
-## For login, applied router model and user and password credentials
+ This application is very basic. created bunch of components and routing all components.
+ I used [material.angular](https://material.angular.io/). did not use any bootstrap.
+ For login, applied router model and user and password credentials.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
 
