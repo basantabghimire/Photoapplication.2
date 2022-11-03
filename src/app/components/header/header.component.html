@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+<mat-toolbar-row>
+    <button mat-button [matMenuTriggerFor]="aboveMenu">Album</button>
+    <mat-menu #aboveMenu="matMenu" yPosition="above">
+        <button mat-menu-item (click)="albumDetails()">Album-Details</button>
+        <button mat-menu-item (click)="createAlbum()">Create-Album</button>
+        <button mat-menu-item (click)="myAlbums()">My-Albums</button>
+      </mat-menu>
+      
+      <button mat-button [matMenuTriggerFor]="belowMenu">Photo</button>
+      <mat-menu #belowMenu="matMenu" yPosition="below">
+          <button mat-menu-item (click)="photoDetails()">Photo-Details</button>
+          <button mat-menu-item (click)="uploadPicture()">Upload-Picture</button>
+      </mat-menu>
+    <span class="example-spacer"></span>
+    <button mat-button [matMenuTriggerFor]="beforeMenu">PhotoApplication</button>
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+    <button mat-menu-item (click)="profile()">Profile</button>
+    <button mat-menu-item (click)="logOut()">Log-Out</button>
+    </mat-menu>
+</mat-toolbar-row>
+</mat-toolbar>
+
+
+
+
+
+

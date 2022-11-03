@@ -1,0 +1,41 @@
+<mat-toolbar color="primary" class="app-header">    
+  <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home" routerLink="./login" style=" cursor: pointer;"></mat-icon> 
+    <span class="nav-tool-items">     
+     Basanta Babu Ghimire
+    </span>
+  </mat-toolbar>
+<div class="b-wrapper">
+    <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+        <mat-card class="box">
+          <mat-card-header>
+            <mat-card-title>
+                <mat-icon class="icon-display">account_circle</mat-icon>
+            </mat-card-title>
+          </mat-card-header>
+          <form class="example-form">
+            <mat-card-content>
+              <mat-form-field class="example-full-width">
+                <input
+                [(ngModel)]="credentials.email"
+                name="email" 
+                required
+                type="email"  
+                matInput placeholder="Username">
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <input
+                [(ngModel)]="credentials.password"
+                name="password"
+                required
+                type="password"
+                 matInput placeholder="Password">
+              </mat-form-field>
+            </mat-card-content>
+            <button (click)="logIn()" mat-raised-button color="primary" class="btn-block">sign-In</button>
+          </form>
+          <div>
+            <button mat-raised-button class="btn-cna">Create New Account </button>
+          </div>
+        </mat-card>
+      </div>
+</div>
